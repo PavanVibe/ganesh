@@ -45,6 +45,9 @@
   .t-part{background:#FBE6C4;color:#8A5200}
   .t-due{background:#F7DAD9;color:var(--kumkum-deep)}
   .mode{font-size:.78rem;color:var(--ink-soft)}
+  table.split td:first-child{font-weight:600}
+  table.split td:first-child small{display:block;font-weight:400;font-size:.76rem;color:var(--ink-soft)}
+  .neg{color:var(--kumkum);font-weight:700}
   .notice{margin-top:26px;border-left:5px solid var(--marigold);background:#FFF8E4;padding:14px 16px}
   .notice h3{font-size:1rem;margin-bottom:5px}
   .notice p{font-size:.92rem;margin-bottom:7px}
@@ -68,7 +71,9 @@
     <div class="out"><dt>Spent</dt><dd>₹9,501</dd></div>
     <div class="wide"><dt>Money in hand</dt><dd>₹13,150</dd></div>
   </dl>
-  <p class="sub">₹7,948 in cash &nbsp;+&nbsp; ₹6,203 &nbsp;+&nbsp; ₹8,500 not yet noted received online</p>
+  <h2>Cash and online</h2>
+  <p class="sub">Where the money sits right now.</p>
+  <table class="split"><thead><tr><th></th><th class="num">Came in</th><th class="num">Paid out</th><th class="num">In hand</th></tr></thead><tbody><tr><td>Cash</td><td class="num"><span>₹7,948</span></td><td class="num"><span>₹500</span></td><td class="num"><span>₹7,448</span></td></tr><tr><td>Online</td><td class="num"><span>₹6,203</span></td><td class="num"><span>₹9,001</span></td><td class="num"><span class="neg">-₹2,798</span></td></tr><tr><td>Not yet noted<small>Laddu money</small></td><td class="num"><span>₹8,500</span></td><td class="num">&mdash;</td><td class="num"><span>₹8,500</span></td></tr></tbody><tfoot><tr><td>Total</td><td class="num"><span>₹22,651</span></td><td class="num"><span>₹9,501</span></td><td class="num"><span>₹13,150</span></td></tr></tfoot></table>
 
   <h2>Collections</h2>
   <p class="sub">29 contributors so far. ₹57,918 still to come in.</p>
@@ -133,12 +138,7 @@
       <td class="num hide-sm">₹8,720</td><td></td></tr></tfoot>
   </table>
 
-  <p class="sub">Of that, ₹500 paid in cash and ₹9,001 paid online.</p>
-
-  <dl class="totals" style="margin-top:22px">
-    <div class="in"><dt>Cash box</dt><dd>₹7,448</dd></div>
-    <div class="out"><dt>Still owed to vendors</dt><dd>₹8,720</dd></div>
-  </dl>
+  <p class="sub">₹500 paid in cash, ₹9,001 paid online.</p>
 
   <div class="notice"><h3>₹57,918 still to be collected</h3><p>Everything committed so far is covered. Those marked pending above, please settle when you can.</p></div>
 
