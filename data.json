@@ -1,0 +1,1026 @@
+{
+ "collections": [
+  [
+   "Rajshekhar",
+   "Internet shop",
+   600,
+   300,
+   "Cash",
+   ""
+  ],
+  [
+   "Tirupati Rao",
+   "",
+   3000,
+   3000,
+   "Online",
+   ""
+  ],
+  [
+   "Vishwan Sai Teja",
+   "",
+   1116,
+   1116,
+   "Cash",
+   ""
+  ],
+  [
+   "Balraj",
+   "",
+   500,
+   500,
+   "Cash",
+   ""
+  ],
+  [
+   "Manohar Reddy",
+   "",
+   111,
+   111,
+   "Cash",
+   ""
+  ],
+  [
+   "Vasu",
+   "",
+   501,
+   501,
+   "Online",
+   ""
+  ],
+  [
+   "Bandi",
+   "Promised",
+   21000,
+   0,
+   "",
+   ""
+  ],
+  [
+   "Laddu",
+   "Auction",
+   17000,
+   8500,
+   "Online",
+   ""
+  ],
+  [
+   "Kalasham",
+   "Auction",
+   7000,
+   0,
+   "",
+   ""
+  ],
+  [
+   "J. Saidaih",
+   "",
+   500,
+   500,
+   "Online",
+   "10 Sep"
+  ],
+  [
+   "Ramreddy",
+   "Promised",
+   116,
+   0,
+   "",
+   "10 Sep"
+  ],
+  [
+   "Sri Dhana Lakshmi Jewellers",
+   "",
+   2100,
+   2100,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Shankar Reddy",
+   "",
+   100,
+   100,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Sushma",
+   "",
+   501,
+   501,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Jagan",
+   "",
+   500,
+   500,
+   "Online",
+   "10 Sep"
+  ],
+  [
+   "Shiva",
+   "",
+   500,
+   500,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Masthan",
+   "",
+   201,
+   201,
+   "Online",
+   "10 Sep"
+  ],
+  [
+   "Rambabu",
+   "",
+   501,
+   501,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "B. Vijay Raju",
+   "",
+   501,
+   501,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Sethuram",
+   "Promised",
+   2001,
+   0,
+   "",
+   "10 Sep"
+  ],
+  [
+   "Madhava Rao",
+   "",
+   501,
+   501,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Pulla Reddy",
+   "",
+   500,
+   500,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Pavan",
+   "",
+   500,
+   500,
+   "Online",
+   "10 Sep"
+  ],
+  [
+   "Srinivas",
+   "",
+   501,
+   501,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "Kumar",
+   "",
+   216,
+   216,
+   "Cash",
+   "10 Sep"
+  ],
+  [
+   "P. Srinivas",
+   "",
+   1001,
+   1001,
+   "Online",
+   "11 Sep"
+  ],
+  [
+   "Vasantha",
+   "",
+   201,
+   201,
+   "Cash",
+   "13 Sep"
+  ],
+  [
+   "Hanumanth Rao",
+   "",
+   500,
+   500,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Surya Prakash",
+   "",
+   200,
+   200,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Srinivas Reddy",
+   "",
+   200,
+   200,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Venkateshwar Rao",
+   "",
+   500,
+   500,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Srinath",
+   "",
+   416,
+   416,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Naveen",
+   "",
+   501,
+   501,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Pratheek",
+   "",
+   100,
+   100,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Priyanka",
+   "",
+   501,
+   501,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Raju",
+   "",
+   201,
+   201,
+   "",
+   "13 Sep"
+  ],
+  [
+   "Raju Goud",
+   "Police",
+   1001,
+   1001,
+   "Cash",
+   "14 Sep"
+  ],
+  [
+   "Pandu",
+   "",
+   2000,
+   2000,
+   "Online",
+   "14 Sep"
+  ],
+  [
+   "Akula Madhukar",
+   "",
+   11000,
+   11000,
+   "Cash",
+   "15 Sep"
+  ],
+  [
+   "Jacket",
+   "Auction",
+   7000,
+   7000,
+   "Online",
+   "15 Sep"
+  ],
+  [
+   "Arul Raj",
+   "",
+   500,
+   500,
+   "Cash",
+   "17 Sep"
+  ],
+  [
+   "Srija",
+   "",
+   500,
+   500,
+   "Cash",
+   "21 Sep"
+  ]
+ ],
+ "expenses": [
+  [
+   "Sticks",
+   "",
+   2100,
+   2100,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Chairs",
+   "₹1,000 advance · moved from the cancelled chowkies order",
+   null,
+   1000,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Cover",
+   "30 × 30 size",
+   2500,
+   2500,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Carpet",
+   "9 × 18 size",
+   700,
+   700,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Rope",
+   "",
+   280,
+   280,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Auto travel",
+   "",
+   500,
+   500,
+   "",
+   "Online",
+   ""
+  ],
+  [
+   "Digging holes",
+   "3 holes × ₹500",
+   1500,
+   1500,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Pooja items",
+   "Kobbarikayas, agarbattis · katta puja",
+   56,
+   56,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Chai & samosa",
+   "For the workers",
+   120,
+   120,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Auto charges",
+   "For the workers",
+   75,
+   75,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Workers payment",
+   "",
+   500,
+   500,
+   "10 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Tins",
+   "2 × ₹40",
+   80,
+   80,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Blade",
+   "",
+   50,
+   50,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Rampam",
+   "",
+   170,
+   170,
+   "10 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Coolie",
+   "",
+   400,
+   400,
+   "11 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Mollalu",
+   "",
+   140,
+   140,
+   "11 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Petrol",
+   "",
+   255,
+   255,
+   "11 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Mollalu & bending wire",
+   "",
+   240,
+   240,
+   "11 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Sticks",
+   "Second purchase",
+   350,
+   350,
+   "11 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Centring",
+   "Advance · total bill ₹12,000",
+   5000,
+   5000,
+   "11 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Centring balance",
+   "Settles the ₹12,000 bill in full",
+   7000,
+   7000,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Haarathi & plate",
+   "",
+   1700,
+   1700,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Pooja store",
+   "",
+   320,
+   320,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Tiffins",
+   "",
+   100,
+   100,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Coconut",
+   "",
+   705,
+   705,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Lights",
+   "",
+   2600,
+   2600,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Cover",
+   "Second purchase",
+   1000,
+   1000,
+   "12 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Cloth",
+   "",
+   2200,
+   2200,
+   "12 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Stapler pins & tape",
+   "",
+   140,
+   140,
+   "12 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Hanging decors",
+   "",
+   800,
+   800,
+   "12 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Shalwa & janda",
+   "",
+   800,
+   800,
+   "12 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Panthulu",
+   "Fee ₹10,000 · ₹3,000 advance paid",
+   10000,
+   3000,
+   "13 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Ball pins",
+   "",
+   50,
+   50,
+   "13 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Decora",
+   "",
+   1500,
+   1500,
+   "13 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Auto fuel",
+   "Tata AC",
+   300,
+   300,
+   "13 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Wire",
+   "",
+   100,
+   100,
+   "14 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Broom stick",
+   "",
+   30,
+   30,
+   "14 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Wire",
+   "Second purchase",
+   90,
+   90,
+   "14 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Petrol",
+   "Tata AC",
+   100,
+   100,
+   "14 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Banana",
+   "",
+   60,
+   60,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Apple & pomegranate",
+   "",
+   100,
+   100,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Banthi pulu",
+   "",
+   100,
+   100,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Pathi",
+   "",
+   50,
+   50,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Flowers",
+   "",
+   190,
+   190,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Garland",
+   "",
+   150,
+   150,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Santhra",
+   "",
+   25,
+   25,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Fruits",
+   "",
+   100,
+   100,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Jio wire",
+   "",
+   800,
+   800,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Pooja store",
+   "Second purchase",
+   900,
+   900,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Bellam",
+   "",
+   70,
+   70,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Pithambaram",
+   "",
+   43,
+   43,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Pancha",
+   "",
+   600,
+   600,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Malle pulu",
+   "",
+   60,
+   60,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Laddu",
+   "",
+   1200,
+   1200,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Tata AC",
+   "",
+   600,
+   600,
+   "14 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Pooja",
+   "",
+   500,
+   500,
+   "14 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Panthulu extras",
+   "Separate from the ₹10,000 fee",
+   150,
+   150,
+   "15 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Wire",
+   "Third purchase",
+   100,
+   100,
+   "15 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Glue",
+   "",
+   130,
+   130,
+   "15 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Plates",
+   "",
+   330,
+   330,
+   "15 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Flex",
+   "",
+   1200,
+   1200,
+   "15 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Water bottles",
+   "",
+   70,
+   70,
+   "15 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Shalva",
+   "",
+   300,
+   300,
+   "15 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Stand",
+   "",
+   250,
+   250,
+   "15 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Housie games",
+   "",
+   60,
+   60,
+   "17 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Shalwa",
+   "",
+   140,
+   140,
+   "17 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Plates",
+   "",
+   140,
+   140,
+   "18 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Banana",
+   "",
+   100,
+   100,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Flowers",
+   "",
+   80,
+   80,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Kumkuma & archana saamanu",
+   "",
+   495,
+   495,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Milk & perugu",
+   "",
+   30,
+   30,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Plates",
+   "",
+   50,
+   50,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Glasses",
+   "",
+   90,
+   90,
+   "18 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Frames auto",
+   "",
+   110,
+   110,
+   "19 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Panthulu bike",
+   "",
+   66,
+   66,
+   "19 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Flowers",
+   "",
+   80,
+   80,
+   "20 Sep",
+   "Online",
+   ""
+  ]
+ ]
+}
