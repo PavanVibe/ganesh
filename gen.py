@@ -13,6 +13,7 @@ UNNOTED_CASH = 1600   # 13 Sep door collections: recorded as a lump, not per per
 D = json.load(open("data.json", encoding="utf-8"))
 COLLECTIONS = D["collections"]
 EXPENSES = D["expenses"]
+REPAYMENTS = D.get("repayments", [])   # [who, amount, mode, date]
 
 MONTHS = {m: i for i, m in enumerate(
     ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], 1)}
@@ -58,9 +59,12 @@ cost   = sum((e[2] if e[2] is not None else e[3]) for e in EXPENSES)
 spent  = sum(e[3] for e in EXPENSES)
 unpaid = cost - spent
 rahul_out  = sum(e[3] for e in EXPENSES if e[6])
-cash_out   = sum(e[3] for e in EXPENSES if e[5].lower() == "cash" and not e[6])
-online_out = sum(e[3] for e in EXPENSES if e[5].lower() == "online" and not e[6])
-committee_out = spent - rahul_out
+repaid        = sum(r[1] for r in REPAYMENTS)
+repaid_cash   = sum(r[1] for r in REPAYMENTS if r[2].lower() == "cash")
+repaid_online = sum(r[1] for r in REPAYMENTS if r[2].lower() == "online")
+cash_out   = sum(e[3] for e in EXPENSES if e[5].lower() == "cash" and not e[6]) + repaid_cash
+online_out = sum(e[3] for e in EXPENSES if e[5].lower() == "online" and not e[6]) + repaid_online
+committee_out = spent - rahul_out + repaid
 other_out  = committee_out - cash_out - online_out
 cash_box   = cash - cash_out
 in_hand    = received - committee_out
@@ -102,14 +106,24 @@ split_table = ('<table class="split"><thead><tr><th></th><th class="num">Came in
                + split_rows + '</tbody><tfoot><tr><td>Total</td>'
                + cell(received) + cell(committee_out) + cell(in_hand) + '</tr></tfoot></table>')
 
+owed = rahul_out - repaid
 owed_block = ""
 if rahul_out > 0:
-    owed_block = ('<div class="notice owed"><h3>Owed to Rahul &mdash; ' + money(rahul_out) + '</h3>'
-        '<p>Rahul paid for the items marked <em>paid by Rahul</em> from his own account. '
-        'That money has not come out of the committee fund and is still owed back to him.</p>'
-        '<p>After repaying him the committee would hold ' + money(in_hand - rahul_out) + '.</p></div>')
+    paid_back = ('<p>' + money(repaid) + ' has been repaid to him.</p>') if repaid else ''
+    if owed > 0:
+        owed_block = ('<div class="notice owed"><h3>Owed to Rahul &mdash; ' + money(owed) + '</h3>'
+            '<p>Rahul paid ' + money(rahul_out) + ' for the items marked <em>paid by Rahul</em> '
+            'from his own account.</p>' + paid_back +
+            '<p>After repaying him the committee would hold ' + money(in_hand - owed) + '.</p></div>')
+    elif owed < 0:
+        owed_block = ('<div class="notice owed"><h3>Rahul was overpaid by ' + money(-owed) + '</h3>'
+            '<p>He paid ' + money(rahul_out) + ' from his own account and has been repaid '
+            + money(repaid) + ', so ' + money(-owed) + ' is due back to the committee.</p></div>')
+    else:
+        owed_block = ('<div class="notice"><h3>Rahul has been repaid in full</h3>'
+            '<p>He paid ' + money(rahul_out) + ' from his own account and it has all been returned.</p></div>')
 
-gap = (unpaid + rahul_out) - (in_hand + to_collect)
+gap = (unpaid + max(owed, 0)) - (in_hand + to_collect)
 notice = ""
 if gap > 0:
     notice = ('<div class="notice"><h3>We need more collections</h3><p>Bills and repayments still due come to '
