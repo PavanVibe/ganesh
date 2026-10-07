@@ -43,16 +43,16 @@ received   = sum(c[3] for c in COLLECTIONS)
 to_collect = pledged - received
 cash   = sum(c[3] for c in COLLECTIONS if c[4].lower() == "cash")
 online = sum(c[3] for c in COLLECTIONS if c[4].lower() == "online")
-other  = received - cash - online
+lump   = sum(c[3] for c in COLLECTIONS if c[5] == "13 Sep" and not c[4])
+other  = received - cash - online - lump
 
 unnoted_note = ""
-if other > 0:
-    unnoted_online = other - UNNOTED_CASH
+if lump > 0:
+    unnoted_online = lump - UNNOTED_CASH
     cash += UNNOTED_CASH; online += unnoted_online
     unnoted_note = ('<p class="sub">Includes the 13 Sep door collections \u2014 '
                     + money(UNNOTED_CASH) + ' cash and ' + money(unnoted_online)
                     + ' online \u2014 recorded as a total rather than per person.</p>')
-    other = 0
 
 cost   = sum((e[2] if e[2] is not None else e[3]) for e in EXPENSES)
 spent  = sum(e[3] for e in EXPENSES)
