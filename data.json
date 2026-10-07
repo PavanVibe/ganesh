@@ -1229,5 +1229,13 @@
    "Online",
    ""
   ]
+ ],
+ "repayments": [
+  [
+   "Rahul",
+   20000,
+   "Cash",
+   "25 Sep"
+  ]
  ]
 }
