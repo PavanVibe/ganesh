@@ -618,15 +618,6 @@
    ""
   ],
   [
-   "Panthulu",
-   "Fee ₹10,000 · ₹3,000 advance paid",
-   10000,
-   3000,
-   "13 Sep",
-   "Online",
-   "Rahul"
-  ],
-  [
    "Ball pins",
    "",
    50,
@@ -1227,6 +1218,42 @@
    122,
    "24 Sep",
    "Online",
+   ""
+  ],
+  [
+   "Panthulu",
+   "Advance · fee agreed at ₹10,000",
+   3000,
+   3000,
+   "13 Sep",
+   "Online",
+   "Rahul"
+  ],
+  [
+   "Panthulu",
+   "Second payment",
+   2500,
+   2500,
+   "21 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "Panthulu",
+   "Third payment",
+   5000,
+   5000,
+   "23 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "DJ",
+   "₹6,000 still due",
+   16000,
+   10000,
+   "",
+   "Cash",
    ""
   ]
  ],
