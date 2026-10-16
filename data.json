@@ -359,6 +359,14 @@
    3000,
    "Cash",
    ""
+  ],
+  [
+   "Thirumalesh",
+   "Paid the ₹1,700 annadanam bill direct",
+   1700,
+   1700,
+   "Online",
+   "23 Sep"
   ]
  ],
  "expenses": [
@@ -1255,7 +1263,7 @@
   ],
   [
    "Panthulu",
-   "Fee ₹10,000 + ₹500 extra, ₹150 extras, ₹66 bike · 13–23 Sep",
+   "Fee ₹10,000 (₹10,500 paid, incl. ₹500 extra) · 13–23 Sep",
    10716,
    10716,
    "13 Sep",
@@ -1265,29 +1273,52 @@
     [
      3000,
      "Online",
-     "Rahul"
+     "Rahul",
+     "Fee"
     ],
     [
      2500,
      "Cash",
-     ""
+     "",
+     "Fee"
     ],
     [
      5000,
      "Online",
-     ""
+     "",
+     "Fee"
     ],
     [
      150,
      "Cash",
-     ""
+     "",
+     "Extras"
     ],
     [
      66,
      "Online",
-     ""
+     "",
+     "Bike"
     ]
    ]
+  ],
+  [
+   "Annadanam",
+   "Paid direct by Thirumalesh",
+   1700,
+   1700,
+   "23 Sep",
+   "Online",
+   ""
+  ],
+  [
+   "Annadanam",
+   "Paid by Prajwal from his own money · to be returned",
+   15000,
+   15000,
+   "",
+   "",
+   "Prajwal"
   ]
  ],
  "repayments": [

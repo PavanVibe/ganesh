@@ -65,6 +65,9 @@ def legs(e):
     return [(e[3], e[5], e[6])]
 LEGS = [l for e in EXPENSES for l in legs(e)]
 rahul_out  = sum(a for a, m, b in LEGS if b)
+PERSON_OUT = {}
+for a, m, b in LEGS:
+    if b: PERSON_OUT[b] = PERSON_OUT.get(b, 0) + a
 repaid        = sum(r[1] for r in REPAYMENTS)
 repaid_cash   = sum(r[1] for r in REPAYMENTS if r[2].lower() == "cash")
 repaid_online = sum(r[1] for r in REPAYMENTS if r[2].lower() == "online")
@@ -92,8 +95,14 @@ def rows(items, is_exp):
         if date: sub += '<small class="when">%s</small>' % esc(date)
         if note: sub += "<small>%s</small>" % esc(note)
         if is_exp and len(it) > 7 and it[7]:
-            parts = ["%s %s%s" % (money(a), m.lower(), (" (by %s)" % b) if b else "") for a, m, b in it[7]]
-            sub += "<small>Paid: %s</small>" % esc(" \u00b7 ".join(parts))
+            groups = {}
+            for leg in it[7]:
+                lab = leg[3] if len(leg) > 3 else "Paid"
+                groups.setdefault(lab, []).append(leg)
+            for lab, legs_ in groups.items():
+                tot = sum(l[0] for l in legs_)
+                bits = ["%s %s%s" % (money(l[0]), l[1].lower(), (" by %s" % l[2]) if l[2] else "") for l in legs_]
+                sub += "<small><b>%s %s</b> &middot; %s</small>" % (esc(lab), money(tot), esc(", ".join(bits)))
         elif mode:
             sub += ('<small>Paid %s%s</small>' % (esc(mode.lower()), (' by %s' % esc(by)) if by else '')) \
                    if is_exp else ('<span class="mode">%s</span>' % esc(mode))
@@ -117,20 +126,22 @@ split_table = ('<table class="split"><thead><tr><th></th><th class="num">Came in
 
 owed = rahul_out - repaid
 owed_block = ""
-if rahul_out > 0:
-    paid_back = ('<p>' + money(repaid) + ' has been repaid to him.</p>') if repaid else ''
-    if owed > 0:
-        owed_block = ('<div class="notice owed"><h3>Owed to Rahul &mdash; ' + money(owed) + '</h3>'
-            '<p>Rahul paid ' + money(rahul_out) + ' for the items marked <em>paid by Rahul</em> '
-            'from his own account.</p>' + paid_back +
-            '<p>After repaying him the committee would hold ' + money(in_hand - owed) + '.</p></div>')
-    elif owed < 0:
-        owed_block = ('<div class="notice owed"><h3>Rahul was overpaid by ' + money(-owed) + '</h3>'
-            '<p>He paid ' + money(rahul_out) + ' from his own account and has been repaid '
-            + money(repaid) + ', so ' + money(-owed) + ' is due back to the committee.</p></div>')
+for who, amt in PERSON_OUT.items():
+    back = sum(r[1] for r in REPAYMENTS if r[0] == who)
+    due = amt - back
+    if due > 0:
+        owed_block += ('<div class="notice owed"><h3>Owed to %s &mdash; %s</h3>'
+            '<p>%s paid %s from their own money for items marked <em>paid by %s</em>.</p>'
+            % (esc(who), money(due), esc(who), money(amt), esc(who)))
+        if back: owed_block += '<p>%s has been repaid so far.</p>' % money(back)
+        owed_block += '</div>'
+    elif due < 0:
+        owed_block += ('<div class="notice owed"><h3>%s was overpaid by %s</h3>'
+            '<p>%s is owed %s back.</p></div>' % (esc(who), money(-due), esc(who), money(-due)))
     else:
-        owed_block = ('<div class="notice"><h3>Rahul has been repaid in full</h3>'
-            '<p>He paid ' + money(rahul_out) + ' from his own account and it has all been returned.</p></div>')
+        owed_block += ('<div class="notice"><h3>%s has been repaid in full</h3>'
+            '<p>%s paid %s from their own money and it has been returned.</p></div>'
+            % (esc(who), esc(who), money(amt)))
 
 gap = (unpaid + max(owed, 0)) - (in_hand + to_collect)
 notice = ""
