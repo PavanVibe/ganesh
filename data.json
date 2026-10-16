@@ -858,15 +858,6 @@
    ""
   ],
   [
-   "Panthulu extras",
-   "Separate from the ₹10,000 fee",
-   150,
-   150,
-   "15 Sep",
-   "Cash",
-   ""
-  ],
-  [
    "Wire",
    "Third purchase",
    100,
@@ -1015,15 +1006,6 @@
    "",
    110,
    110,
-   "19 Sep",
-   "Online",
-   ""
-  ],
-  [
-   "Panthulu bike",
-   "",
-   66,
-   66,
    "19 Sep",
    "Online",
    ""
@@ -1236,33 +1218,6 @@
    ""
   ],
   [
-   "Panthulu",
-   "Advance · fee ₹10,000, ₹10,500 paid in all",
-   3000,
-   3000,
-   "13 Sep",
-   "Online",
-   "Rahul"
-  ],
-  [
-   "Panthulu",
-   "Second payment",
-   2500,
-   2500,
-   "21 Sep",
-   "Cash",
-   ""
-  ],
-  [
-   "Panthulu",
-   "Third payment · includes ₹500 extra, given willingly",
-   5000,
-   5000,
-   "23 Sep",
-   "Online",
-   ""
-  ],
-  [
    "DJ & DCM",
    "Same job · ₹21,000 in total",
    7000,
@@ -1297,6 +1252,42 @@
    "24 Sep",
    "Online",
    ""
+  ],
+  [
+   "Panthulu",
+   "Fee ₹10,000 + ₹500 extra, ₹150 extras, ₹66 bike · 13–23 Sep",
+   10716,
+   10716,
+   "13 Sep",
+   "Online",
+   "",
+   [
+    [
+     3000,
+     "Online",
+     "Rahul"
+    ],
+    [
+     2500,
+     "Cash",
+     ""
+    ],
+    [
+     5000,
+     "Online",
+     ""
+    ],
+    [
+     150,
+     "Cash",
+     ""
+    ],
+    [
+     66,
+     "Online",
+     ""
+    ]
+   ]
   ]
  ],
  "repayments": [

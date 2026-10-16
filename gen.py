@@ -58,12 +58,18 @@ if lump > 0:
 cost   = sum((e[2] if e[2] is not None else e[3]) for e in EXPENSES)
 spent  = sum(e[3] for e in EXPENSES)
 unpaid = cost - spent
-rahul_out  = sum(e[3] for e in EXPENSES if e[6])
+def legs(e):
+    """(amount, mode, paid_by) for each payment. A row may carry its own breakdown as e[7]."""
+    if len(e) > 7 and e[7]:
+        return [(p[0], p[1], p[2]) for p in e[7]]
+    return [(e[3], e[5], e[6])]
+LEGS = [l for e in EXPENSES for l in legs(e)]
+rahul_out  = sum(a for a, m, b in LEGS if b)
 repaid        = sum(r[1] for r in REPAYMENTS)
 repaid_cash   = sum(r[1] for r in REPAYMENTS if r[2].lower() == "cash")
 repaid_online = sum(r[1] for r in REPAYMENTS if r[2].lower() == "online")
-cash_out   = sum(e[3] for e in EXPENSES if e[5].lower() == "cash" and not e[6]) + repaid_cash
-online_out = sum(e[3] for e in EXPENSES if e[5].lower() == "online" and not e[6]) + repaid_online
+cash_out   = sum(a for a, m, b in LEGS if m.lower() == "cash" and not b) + repaid_cash
+online_out = sum(a for a, m, b in LEGS if m.lower() == "online" and not b) + repaid_online
 committee_out = spent - rahul_out + repaid
 other_out  = committee_out - cash_out - online_out
 cash_box   = cash - cash_out
@@ -79,13 +85,16 @@ def tag(paid, total, is_exp):
 def rows(items, is_exp):
     out = []
     for it in items:
-        if is_exp: name, note, total, paid, date, mode, by = it
+        if is_exp: name, note, total, paid, date, mode, by = it[:7]
         else:      name, note, total, paid, mode, date = it; by = ""
         due = 0 if total is None else total - paid
         sub = ""
         if date: sub += '<small class="when">%s</small>' % esc(date)
         if note: sub += "<small>%s</small>" % esc(note)
-        if mode:
+        if is_exp and len(it) > 7 and it[7]:
+            parts = ["%s %s%s" % (money(a), m.lower(), (" (by %s)" % b) if b else "") for a, m, b in it[7]]
+            sub += "<small>Paid: %s</small>" % esc(" \u00b7 ".join(parts))
+        elif mode:
             sub += ('<small>Paid %s%s</small>' % (esc(mode.lower()), (' by %s' % esc(by)) if by else '')) \
                    if is_exp else ('<span class="mode">%s</span>' % esc(mode))
         out.append('<tr><td class="who">%s%s</td><td class="num">%s</td><td class="num">%s</td>'
