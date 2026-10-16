@@ -137,7 +137,7 @@ for who, amt in PERSON_OUT.items():
         owed_block += '</div>'
     elif due < 0:
         owed_block += ('<div class="notice owed"><h3>%s was overpaid by %s</h3>'
-            '<p>%s is owed %s back.</p></div>' % (esc(who), money(-due), esc(who), money(-due)))
+            '<p>%s has been returned %s more than they spent, so %s should give that back to the committee.</p></div>' % (esc(who), money(-due), esc(who), money(-due), esc(who)))
     else:
         owed_block += ('<div class="notice"><h3>%s has been repaid in full</h3>'
             '<p>%s paid %s from their own money and it has been returned.</p></div>'
@@ -196,7 +196,7 @@ __EXPROWS__
     <tfoot><tr><td>Total</td><td class="num">__COST__</td><td class="num">__SPENT__</td>
       <td class="num hide-sm">__UNPAID__</td><td></td></tr></tfoot>
   </table>
-  <p class="sub">__CASHOUT__ paid in cash, __ONLINEOUT__ paid online from the committee fund, __RAHULOUT__ paid by Rahul.</p>
+  <p class="sub">__CASHOUT__ paid in cash, __ONLINEOUT__ paid online from the committee fund, __RAHULOUT__ paid personally by Rahul, Prajwal and Thirumalesh.</p>
 
   __OWED__
 
