@@ -651,15 +651,6 @@
    "Rahul"
   ],
   [
-   "Decora",
-   "",
-   1500,
-   1500,
-   "13 Sep",
-   "Online",
-   "Rahul"
-  ],
-  [
    "Auto fuel",
    "Tata AC",
    300,
@@ -1337,6 +1328,12 @@
    20000,
    "Cash",
    "25 Sep"
+  ],
+  [
+   "Rahul",
+   -1500,
+   "Online",
+   "16 Oct"
   ]
  ]
 }
