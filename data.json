@@ -1240,8 +1240,8 @@
   ],
   [
    "DJ & DCM",
-   "Same job · ₹21,000 in total · ₹4,000 still due",
-   11000,
+   "Same job · ₹21,000 in total",
+   7000,
    7000,
    "24 Sep",
    "Online",
@@ -1254,6 +1254,24 @@
    10000,
    "24 Sep",
    "Cash",
+   ""
+  ],
+  [
+   "DJ & DCM",
+   "Balance, part 1",
+   2000,
+   2000,
+   "24 Sep",
+   "Cash",
+   ""
+  ],
+  [
+   "DJ & DCM",
+   "Balance, part 2",
+   2000,
+   2000,
+   "24 Sep",
+   "Online",
    ""
   ]
  ],
