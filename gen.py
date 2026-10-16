@@ -7,7 +7,7 @@ data.json
 """
 import json, html, datetime
 
-UPDATED = "22 September 2026"
+UPDATED = "16 October 2026"
 UNNOTED_CASH = 1600   # 13 Sep door collections: recorded as a lump, not per person
 
 D = json.load(open("data.json", encoding="utf-8"))
