@@ -359,14 +359,6 @@
    3000,
    "Cash",
    ""
-  ],
-  [
-   "Thirumalesh",
-   "Paid the ₹1,700 annadanam bill direct",
-   1700,
-   1700,
-   "Online",
-   "23 Sep"
   ]
  ],
  "expenses": [
@@ -1304,7 +1296,7 @@
   ],
   [
    "Annadanam",
-   "Paid direct by Thirumalesh",
+   "Committee expense, paid online",
    1700,
    1700,
    "23 Sep",
