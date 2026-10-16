@@ -149,7 +149,7 @@ if gap > 0:
     notice = ('<div class="notice"><h3>We need more collections</h3><p>Bills and repayments still due come to '
               '<span class="big-due">%s</span>. Against that we have %s in hand and %s promised &mdash; '
               'a shortfall of <span class="big-due">%s</span>.</p></div>'
-              % (money(unpaid + rahul_out), money(in_hand), money(to_collect), money(gap)))
+              % (money(unpaid + max(owed, 0)), money(in_hand), money(to_collect), money(gap)))
 elif to_collect > 0:
     notice = ('<div class="notice"><h3>%s still to be collected</h3>'
               '<p>Those marked pending above, please settle when you can.</p></div>' % money(to_collect))
